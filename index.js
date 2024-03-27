@@ -129,13 +129,13 @@ classic.sendMessage(anu.id, { image: { url: ppuser }, mentions: [num], caption: 
  ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
 Terima Kasih Sudah Bergabung Jangan Lupa Baca Deskripsi Yah
 ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
-Creator : https://wa.me/258869103969`})
+Creator : https://wa.me/254769345589`})
 } else if (anu.action == 'remove') {
 classic.sendMessage(anu.id, { image: { url: ppuser }, mentions: [num], caption: `Karena Untuk Setiap Ucapan Selamat Datang Akan Selalu Diakhiri Dengan Ucapan Selamat Tinggal 👋
 ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
 Selamat Tinggal *@${num.split("@")[0]}* Di Group *${metadata.subject}*
 ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
-Creator : https://wa.me/258869103969`})
+Creator : https://wa.me/254769345589`})
 } else if (anu.action == 'promote') {
 classic.sendMessage(anu.id, { image: { url: ppuser }, mentions: [num], caption: `@${num.split('@')[0]} Ciee Jadi Admin Di Group ${metadata.subject} ${metadata.desc}`  })
 } else if (anu.action == 'demote') {
@@ -179,7 +179,7 @@ vcard: `BEGIN:VCARD\nVERSION:3.0\nN:${await classic.getName(i + '@s.whatsapp.net
 classic.sendMessage(jid, { contacts: { displayName: `${list.length} Kontak`, contacts: list }, ...opts }, { quoted })}
 //=================================================//
 //Kalau Mau Self Lu Buat Jadi false
-classic.public = true
+classic.public = false
 //=================================================//
 //=================================================//
 classic.ev.on('creds.update', saveCreds)
